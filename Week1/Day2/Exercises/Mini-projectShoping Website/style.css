@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+    height: 73vh;
+    border: 2px solid red;
+    position: relative;
+}
+
+section{
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(4, 13, 39);
+    font-size: 1.1em;
+    border: 3px solid black;
+}
+
+img{
+    display:inline;
+    width: 50vh;
+    height: 70vh;
+    border-bottom: 3px solid royalblue;
+}
+
+.dressOne{
+    position: absolute;
+    top: 0.5em;
+    left: 0.2em;
+}
+
+.dressTwo{
+    position: absolute;
+    top: 0.5em;
+    right: 26.3em;
+}
+
+.dressThree{
+    position: absolute;
+    top: 0.5em;
+    right: 0.2em;
+}

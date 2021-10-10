@@ -1,0 +1,149 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/323408.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 97vh;
+}
+
+.imageLogo{
+    width:35px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin:6px;
+}
+
+nav{
+   
+    width: 100%;
+    height: 3em;
+}
+
+ul{
+    display: inline;
+    list-style: none;
+    position: relative;
+    bottom: 1.2em;
+}
+
+li{
+    padding: 1%;
+    width: 3%;
+    display: inline-block;
+    color: white;
+    font-size: 1.2em;
+}
+
+main{
+    height: 85vh;
+}
+
+.content{
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    display: inline-block;
+    width: 24em;
+    box-sizing: border-box;
+    position: relative;
+    top: 54%;
+    left: 3%;
+    padding: 0% 1%;
+}
+
+.content>h1{
+    font-size: 3em;
+    text-align: center;
+    margin: 1% 0%;
+}
+
+.content>p{
+    text-align: center;
+}
+
+footer{
+    height: 4.5vh;
+}    
+
+.links{
+   text-align: center;
+}
+
+a{
+    color: white;
+    font-size: 20px;
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+ nav {
+    font-size: 1.4em;
+    height: 5vh;
+    width: 73vh; 
+ } 
+
+ li{
+     padding: 0% 5%;
+     position: relative;
+     right: 8%;
+     top: 25%;
+ }
+
+ .content{
+    border: 1px solid whitesmoke;
+     border-radius: 25px;
+     background-color: rgba(0, 0, 0, 0.418);
+     height: 15em;
+     width: 32em;
+     position: relative;
+     top: 45%;
+     left: 15%;
+ }
+ 
+ h1{
+     font-size: 1em;
+ }
+
+ p{
+     font-size: 1.8em;
+ }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .content{
+         left: 25%;
+     }
+     
+ }
+
+@media all and (max-width: 480px) { 
+    
+    nav {
+        font-size: 1.3em;
+        height: 8vh;
+        width: 17em; 
+        
+     } 
+
+     li {
+        font-size: 1.5em;
+        padding: 0% 16%;
+        position: relative;
+        right: 7%;
+        top: 19%;
+    }
+
+    .content {
+        width: 50vh;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.609);
+        position: relative;
+        top: 30%;
+        left: 4%;
+        border: 1px solid whitesmoke;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    height: 50vh;
+}
+
+.navBar {
+    background-color: #31393c;
+    line-height: 10px;
+    display: flex;
+    gap: 81%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    padding: 5px;
+    width: 35px;
+}
+
+.navBar ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0px;
+    height: 5vh;
+}
+
+.navBar li {
+    display: inline;
+    border-left: 2px solid #fbfaff;
+}
+
+.navBar li a {
+    display: inline-block;
+    padding: 19px 23px;
+    text-decoration: none;
+    color: #fbfaff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.greetSection {
+    width: 99vw;
+    height: 94vh;
+    background-image: url("https://images.unsplash.com/photo-1513348197457-df49c7c9b0a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.greetCard {
+    display: inline-block;
+    position: relative;
+    top: 35%;
+    left: 32%;
+    width: 45em;
+    height: 15em;
+}
+
+.greetCard h1 {
+    text-align: left;
+    font-size: 2em;
+    margin: 2% 5%;
+}
+
+.greetCard p {
+    margin: 2% 5%;
+    font-size: 21px;
+}
+
+.greetCard button {
+    width: 25%;
+    height: 19%;
+    margin-left: 5%;
+    background-color: #31393c;
+    border: 1px solid rgba(255, 255, 255, 0.322);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fbfaff;
+}
+
+.profile {
+    height: 60vh;
+}
+
+.profileCard {
+    display: inline-flex;
+    width: 45vw;
+    height: 40vh;
+    position: relative;
+    top: 10%;
+    left: 32%;
+    gap: 4%;
+}
+
+.profilePic img {
+    border-radius: 200px;
+    display: inline-block;
+    width: 16em;
+    margin: 22% 20%;
+}
+
+.profileContent {
+    box-sizing: content-box;
+    margin-left: 5%;
+    padding: 10% 3%;
+    border-left: 4px solid #31393c;
+}
+
+.profileContent h2 {
+    font-size: 2em;
+}
+
+.profileContent p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.protfolio {
+    height: 80vh;
+}
+
+.protfilioCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    width: 50vw;
+    height: 25vw;
+    position: relative;
+    top: 20%;
+    left: 25%;
+}
+
+.projectsCard {
+    border-radius: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 5%;
+    padding: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsCard img {
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+    border: 1px solid rgba(156, 153, 153, 0.281);
+}
+
+.cardHead {
+    height: 24vh;
+}
+
+.cardbody {
+    padding: 6% 6%;
+    font-size: 75%;
+    font-weight: 500;
+    border-top: 2px solid #31393c;
+    color: #31393c;
+}
+
+.contactMe {
+    border: 2px solid rgb(128, 128, 31);
+    display: inline-block;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 32%;
+}
+
+.contactMe input {
+    border: 1px solid wheat;
+    border-radius: 10px;
+    display: block;
+    width: 35em;
+    height: 2em;
+    margin-left: 15%;
+}
+
+@media all and (min-width: 1280px) {
+    h1 {
+        margin-top: 4%;
+    }
+    .navBar {
+        gap: 75%;
+    }
+    .greetSection {
+        width: 100%;
+    }
+    .greetCard {
+        position: relative;
+        top: 30%;
+        left: 29%;
+        width: 37em;
+        height: 15em;
+    }
+    .greetSection button {
+        width: 6em;
+        height: 2em;
+        font-size: 25px;
+    }
+    .profileCard {
+        height: 15vw;
+        position: relative;
+        left: 29%;
+    }
+    .profilePic img {
+        width: 12em;
+        margin: 6% 14%;
+    }
+    .profileContent {
+        padding: 4% 6%;
+        border-left: 4px solid #31393c;
+    }
+    .profileContent p {
+        font-size: 1em;
+    }
+    .protfilioCard {
+        position: relative;
+        top: 10%;
+        left: 24%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navBar {
+        gap: 69%;
+    }
+    .greetSection {
+        width: 100%;
+    }
+    .greetCard {
+        position: relative;
+        top: 34%;
+        left: 29%;
+        width: 32em;
+        height: 12em;
+    }
+    .greetCard h1 {
+        font-size: 2rem;
+    }
+    .greetCard p {
+        font-size: 1rem;
+    }
+    .greetCard button {
+        font-size: 1rem;
+        width: 7em;
+        height: 2em;
+    }
+    .profileCard {
+        height: 16vw;
+        position: relative;
+        left: 24%;
+    }
+    .profilePic img {
+        width: 10em;
+        margin: 6% 14%;
+    }
+    .profileContent {
+        padding: 4% 5%;
+        border-left: 3px solid #31393c;
+    }
+    .profileContent p {
+        font-size: 14px;
+    }
+    .protfilioCard {
+        top: 15%;
+    }
+    .projectsCard {
+        margin: 1%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        gap: 55%;
+    }
+    .greetCard {
+        width: 25em;
+        height: 5em;
+    }
+    .greetCard h1 {
+        font-size: 22px;
+    }
+    .greetCard p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .greetCard button {
+        font-size: 15px;
+        width: 12em;
+        height: 25px;
+    }
+    .profileCard {
+        height: 25vh;
+        width: 50vw;
+        position: relative;
+        left: 25%;
+    }
+    .profilePic img {
+        width: 8em;
+        margin: 12% 12%;
+    }
+    .profileContent {
+        padding: 2% 2%;
+        border-left: 3px solid #31393c;
+    }
+    .profileContent p {
+        font-size: 12px;
+    }
+    .profileContent h1 {
+        font-size: 11px;
+    }
+    .protfilioCard {
+        top: 12%;
+        left: 10%;
+        gap: 16%;
+    }
+    .projectsCard {
+        width: 25vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .navBar {
+        gap: 10%;
+    }
+    .greetCard {
+        left: 12%;
+        width: 18em;
+        height: 2em;
+    }
+    .greetCard h1 {
+        font-size: 18px;
+    }
+    .greetCard p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .greetCard button {
+        font-size: 17px;
+        width: 14em;
+        height: 25px;
+    }
+    .profile {
+        height: 80vh;
+    }
+    .profile h1 {
+        margin-top: 5%;
+        font-size: 2em;
+    }
+    .profileCard {
+        flex-direction: column;
+        height: 58vh;
+        width: 65vw;
+        left: 15%;
+    }
+    .profilePic img {
+        width: 10em;
+        margin: 4% 19%;
+    }
+    .profileContent {
+        text-align: center;
+        border: none
+    }
+    .profileContent p {
+        font-size: 15px;
+    }
+    .profileContent h1 {
+        font-size: 11px;
+    }
+    .protfilioCard {
+        top: 12%;
+        left: 10%;
+        gap: 16%;
+    }
+    .projectsCard {
+        width: 25vh;
+    }
+    .profile {
+        height: 100vh;
+    }
+    .protfilioCard {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2px;
+        position: relative;
+        top: 5%;
+        left: 10%;
+    }
+    .projectsCard {
+        border-radius: 25px;
+        width: 95vw;
+        height: 25vh;
+        position: relative;
+        right: 8%;
+        padding: 10% 4%;
+        flex-direction: row;
+    }
+    .projectsCard img {
+        border-radius: 150px;
+        width: 8em;
+        height: 8em;
+        border: 1px solid rgba(156, 151, 151, 0.582);
+    }
+    .cardbody {
+        padding: 0% 6%;
+        font-size: 12px;
+        font-weight: 600;
+        border-top: none;
+    }
+}
