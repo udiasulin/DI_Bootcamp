@@ -8,9 +8,7 @@ let guestList = {
 let userName = prompt('Enter your name');
 
 if (userName in guestList) {
-    let users = Object.valuesra(guestList);
-    console.log(users) 
-    console.log(`Hi I'm ${userName}, and iam from ${guestList}`)
+    console.log(`Hi I'm ${userName}, and iam from ${guestList[userName]}`)
 } else {
     console.log('Hi! I am a guest.')
 }
