@@ -1,2 +1,6 @@
-let colors = ['red', 'blue', 'white', 'black', 'yellow']
-let suffixs = ['1#', '2#', '#3', '#4', '#5']
+let colors = ['red','blue','white','black'];
+let suffix = ['st','nd','rd','th'];
+
+for(let i =0; i <colors.length; i++){
+    console.log(`My #${i + 1} choice is ${colors[i]}`)
+}
