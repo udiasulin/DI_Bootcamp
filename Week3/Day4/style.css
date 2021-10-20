@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 99vw;
+    height: 97vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.colorSection{
+    border: 2px solid black;
+    width: 25vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.divSection{
+    border: 2px solid black;
+    width: 75vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(60 ,1fr);
+    
+}
+
+.colorsDiv{
+    border: 2px solid black;
+}
+
+.colorPlate{
+    margin:3px;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 5px;
+}
+
+.topBtn{
+    height: 10%;
+    padding: 3%;
+}
+
+.topBtn > button{
+    width: 22vw;
+    height: 6vh;
+    border: 1px solid rgb(14, 29, 28);
+    border-radius: 20px;
+    background-color: rgba(253, 252, 252, 0.445);
+    
+}
+
+button:hover{
+    background-color:rgba(0, 0, 0, 0.103)
+}
+
+.toPaintDiv{
+    border: 1px solid black;
+}
