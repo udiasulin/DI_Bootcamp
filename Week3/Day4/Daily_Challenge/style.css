@@ -18,9 +18,12 @@
         height: 8vh;
     }
 
+
     .deleteInput{
-        margin-right: 5%;
-    }
+        content: url(https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-x-mark-1.png);
+       margin-right: 5%;
+
+      }
 
     form > input{
         width: 19vw;

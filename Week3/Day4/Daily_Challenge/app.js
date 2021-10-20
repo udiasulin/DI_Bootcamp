@@ -31,7 +31,6 @@ function addTask(e) {
         item.appendChild(itemText)
         list.appendChild(item)
         item.appendChild(markTodo)
-        markTodo.append(icon)
         markTodo.addEventListener('change', deleteTask)
 
         todoInput.value = '';
