@@ -20,18 +20,23 @@ function addTask(e) {
 
         let item = document.createElement('li')
         let markTodo = document.createElement('input')
+        let deleteTodo = document.createElement('button')
 
 
         markTodo.setAttribute('type', 'checkbox')
         markTodo.classList.add('deleteInput')
 
         let itemText = document.createTextNode(todoInput.value)
+        let deleteBtnText = document.createTextNode('X')
 
         listDiv.appendChild(list)
-        item.appendChild(itemText)
         list.appendChild(item)
+        deleteTodo.appendChild(deleteBtnText)
+        item.appendChild(deleteTodo)
         item.appendChild(markTodo)
-        markTodo.addEventListener('change', deleteTask)
+        item.appendChild(itemText)
+
+        deleteTodo.addEventListener('click', deleteTask)
 
         todoInput.value = '';
     }
@@ -39,7 +44,7 @@ function addTask(e) {
 }
 
 function deleteTask(e) {
-    if (e.target) {
+    
         e.target.parentElement.remove()
-    }
+
 }

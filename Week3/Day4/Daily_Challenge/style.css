@@ -20,9 +20,7 @@
 
 
     .deleteInput{
-        content: url(https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-x-mark-1.png);
        margin-right: 5%;
-
       }
 
     form > input{
@@ -65,7 +63,13 @@
         position: relative;
         right: 12%;
         display: flex;
-        justify-content: space-between;
+        
     }
 
-    
+    li > button{
+        width: 3vh;
+        height: 3vh;
+        box-sizing: border-box;
+        padding: 1px;
+        margin: 2px;
+    }
