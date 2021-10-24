@@ -1,0 +1,75 @@
+    html,body{     
+        background: rgb(2,172,240);
+        background: linear-gradient(90deg, rgba(2,172,240,1) 37%, rgba(11,228,228,1) 60%);
+    }
+    
+    .container{
+        border: 2px solid rgba(250, 247, 247, 0.863);
+        border-radius: 25px;
+        display: inline-block;
+        padding:5%;
+        position: relative;
+        left: 32%;
+        top: 5em;
+        background-color: rgba(15, 11, 11, 0.473);
+    }
+
+    .inputDiv{
+        height: 8vh;
+    }
+
+
+    .deleteInput{
+       margin-right: 5%;
+      }
+
+    form > input{
+        width: 19vw;
+        height: 2em;
+        border: 2px solid black;
+        border-radius: 25px;
+        margin-top: 2%;
+        margin-left: 2%;
+        padding-left: 10px;
+    }
+
+    form>button{
+        border: 1px solid black;
+        margin-left: 3%;
+        height: 5vh;
+        border-radius: 25px;
+        background-color: rgba(240, 233, 233, 0.897);
+    }
+
+    .listTasks{
+        display: inline-block;
+        width: 25vw;
+        height: 45vh;
+        overflow:auto;
+
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    li{
+        border: 1px solid black;
+        border-radius: 25px;
+        height: 5vh;
+        padding-left: 4%;
+        padding-top: 2%;
+        margin: 5px;
+        position: relative;
+        right: 12%;
+        display: flex;
+        
+    }
+
+    li > button{
+        width: 3vh;
+        height: 3vh;
+        box-sizing: border-box;
+        padding: 1px;
+        margin: 2px;
+    }
