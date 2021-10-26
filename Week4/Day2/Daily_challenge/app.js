@@ -15,7 +15,7 @@ groceriesCopy = groceries;
 groceries['totalPrice'] = '35$';
 groceries['other']['payed'] = false;
 
-console.log(groceriesCopy)
+console.log(groceries)
 // Yes because they have the same address.
 
 
