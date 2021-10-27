@@ -8,11 +8,8 @@ let inventory = [
 
 (function (carInventory) {
     let firstCar = carInventory.find(element => element['car_make'] === 'Honda')
-
-    let carByYear = carInventory.sort(function (a, b) {
-        return a.car_year - b.car_year
-    })
-
+    let carByYear = carInventory.sort((a, b) => a.car_year - b.car_year)
+    
     console.log(`This is a ${firstCar['car_make']} ${firstCar['car_model']} from ${firstCar['car_year']}`)
     console.log(carByYear)
 })(inventory);
