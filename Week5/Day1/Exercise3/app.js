@@ -1,0 +1,33 @@
+let marioGame = {
+    detail: "An amazing game!",
+    characters: {
+        mario: {
+            description: "Small and jumpy. Likes princesses.",
+            height: 10,
+            weight: 3,
+            speed: 12,
+        },
+        bowser: {
+            description: "Big and green, Hates princesses.",
+            height: 16,
+            weight: 6,
+            speed: 4,
+        },
+        princessPeach: {
+            description: "Beautiful princess.",
+            height: 12,
+            weight: 2,
+            speed: 2,
+        }
+    },
+}
+
+let newJsonObj = JSON.stringify();
+console.log(newJsonObj)
+
+//1. nested objects are  supported so the whole structure is stringified
+
+let jsonObj = JSON.stringify(marioGame, null, 2);
+// jsonObj: "{\n  \"detail\": \"An amazing game!\",\n  \"character
+console.log(jsonObj)
+
