@@ -45,7 +45,11 @@ section{
     box-shadow: 11px 14px 12px 0px rgba(0,0,0,0.18);
     background-image: url('https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/card-pattern.png?raw=true');
     border: 2px solid #a2dcd8;
+<<<<<<< HEAD
     font-size: 2vh;
+=======
+    font-size: 16px;
+>>>>>>> 3b4a8950612fe1bb90a7e90e2545e25c35b25e51
     font-weight: 700;
 }
 
