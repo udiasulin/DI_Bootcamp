@@ -1,0 +1,65 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+html,body{
+    background-image: url('https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png?raw=true');
+background-color: rgb(79, 240, 240);
+}
+
+nav{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.479);
+    height: 9vh;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+}
+
+ul{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:left;
+    height: 7vh;
+    width: 75vw;
+    margin-top: 1px;
+    padding: 5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1{
+margin-top: 1%;
+font-family: 'SEGA LOGO FONT', sans-serif;
+font-size: 2rem;
+color: white;
+font-weight: 200;
+
+}
+
+input{
+    border-radius: 15px;
+border: 1px solid rgb(252, 244, 244);
+height: 6vh;
+width: 46vw;
+margin-left: 5%;
+font-size: 18px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 3px solid white;
+    height: 85vh;
+    width: 95vw;
+    margin-top: 5%;
+    margin-left: 2%;
+    
+}
+.card{
+    border:2px solid  black;
+}

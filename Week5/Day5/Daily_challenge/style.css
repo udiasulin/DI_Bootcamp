@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid black;
+    width: 45vw;
+    height: 75vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 30%;
+    margin-top: 6%;
+    gap: 5px;
+    padding-bottom: 2%;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+label{
+    font-size: 2rem;
+}
+
+select{
+    width: 35vw;
+    height: 5vh;
+    margin-left: 10%;
+}
+
+input{
+    width: 35vw;
+    height: 5vh; 
+    margin-left: 10%;
+}
+
+button{
+    width: 35vw;
+    height: 5vh; 
+    margin-left: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
