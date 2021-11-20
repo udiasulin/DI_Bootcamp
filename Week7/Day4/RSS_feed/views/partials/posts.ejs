@@ -1,0 +1,30 @@
+<div id="container">
+    <div class="row">
+        <% data.forEach(item=>{ %>
+            <div class="col-4">
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <%= item.title %>
+                        </h3>
+                        <p class="card-text">
+                            <%= item.creator %>
+                        </p>
+                        <p class="card-text">
+                            <%= item.pubDate.slice(0, 25) %>
+                        </p>
+                        <p class="card-text">
+                            <%= item.categories %>
+                        </p>
+                        <p class="card-text">
+                            <%= item.contentSnippet %>
+                        </p>
+                        <a href="<%= item.link %>" class="stretched-link">
+                            <%= item.title %>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+</div>
