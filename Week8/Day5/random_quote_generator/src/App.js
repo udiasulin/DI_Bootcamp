@@ -10,8 +10,21 @@ class App extends React.Component {
             quote: '',
             author: '',
             bgColor: '',
-            display: false
+            display: false,
+            lastNumber: 0
+
         }
+    }
+
+    generateNumber = () => {
+        let randomNumber = Math.floor(Math.random() * quotes.length)
+        if (randomNumber !== this.state.lastNumber) {
+            this.setState({ lastNumber: randomNumber })
+            return randomNumber
+        } else {
+            this.generateNumber()
+        }
+
     }
 
     getRandomQuote = () => {
@@ -20,12 +33,14 @@ class App extends React.Component {
         let header = document.getElementById('header')
         let btn = document.getElementById('btn')
 
-        let randomNumber = Math.floor(Math.random() * quotes.length)
+        let generatedNum = this.generateNumber()
+
         let found = quotes.find((element, index) => {
-            if (index === randomNumber) {
+            if (index === generatedNum) {
                 return element
             }
         })
+
         this.setState({
             quote: found.quote,
             author: found.author
@@ -35,6 +50,7 @@ class App extends React.Component {
         this.setState({
             bgColor: color
         });
+
         document.body.style.backgroundColor = this.state.bgColor;
         header.style.color = this.state.bgColor;
         btn.style.color = this.state.bgColor;
@@ -54,7 +70,7 @@ class App extends React.Component {
             <>
                 <div className='quoteDiv'>
                     <h1 id='header'>{this.state.quote}</h1>
-                    <p>-{this.state.author}</p>
+                    <p>-{this.state.author === '' ? 'Unknown' : this.state.author}</p>
                     <button onClick={this.getRandomQuote} id="btn">New Quote</button>
                 </div>
             </>
