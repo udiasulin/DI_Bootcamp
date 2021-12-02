@@ -40,6 +40,7 @@ class App extends React.Component {
             return e;
         }
     }
+    
     render() {
         console.log(this.postData())
         return (
