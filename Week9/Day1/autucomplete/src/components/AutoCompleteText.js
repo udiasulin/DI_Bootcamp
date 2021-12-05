@@ -1,12 +1,11 @@
-import './App.css';
 import data from '../Countries'
-class App extends React.Component {
+
+class AutoCompleteText extends React.Component {
     constructor() {
         super();
     }
 
     render() {
-        console.log(data)
         return (
             <>
                 <div>
@@ -20,4 +19,4 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default AutoCompleteText;
