@@ -1,0 +1,13 @@
+.nav {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.btn{
+    
+    border-left: 2px solid #40464F;
+    font-weight: 900;
+    border-radius: 0%;
+}
