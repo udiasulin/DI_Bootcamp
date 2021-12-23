@@ -1,0 +1,21 @@
+.overlay{
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.close{
+    position: absolute;
+    top: 12%;
+    left: 95%;
+    background-color: white;
+    
+}
